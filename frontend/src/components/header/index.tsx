@@ -202,7 +202,7 @@ const pathname = usePathname();
                         </Link>
                       </div>
                       <div className="">
-                        <Link href="/perks-&-benefits" onClick={handleLink}>
+                        <Link href="/perks-and-benefits" onClick={handleLink}>
                           <MobShowItem text="Perks & Benefits" />
                         </Link>
                       </div>

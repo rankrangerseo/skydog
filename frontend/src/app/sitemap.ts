@@ -36,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/perks-&-benefits`,
+      url: `${baseUrl}/perks-and-benefits`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,

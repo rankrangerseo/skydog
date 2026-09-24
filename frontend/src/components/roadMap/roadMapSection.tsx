@@ -184,7 +184,7 @@ const RoadMapSection = () => {
             />
             <div className="btn-wrapper">
               <div className="btn-top h-[55px] w-[55px]">
-                <Link href="">
+                <Link href="/join-waitlist" aria-label="Join waitlist for roadmap updates">
                   <span>
                     <GoArrowUpRight className="text-[#fff] text-xl font-normal" />
                   </span>

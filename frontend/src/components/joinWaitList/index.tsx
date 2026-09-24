@@ -11,6 +11,7 @@ const JoinWaitList = () => {
           <div className="flex flex-col md:flex-row md:items-center max-md:pt-[50px]  md:pt-[75px] lg:min-h-screen  md:gap-5 min-[1280px]:gap-0 lg:py-5 justify-between ">
             <div className="w-full lg:w-[60%] md:w-[60%]">
               <TypoGraphy
+                as="h1"
                 variant="heading"
                 text="Join the Waitlist Today and Be the First to Experience What's Coming!"
                 customCss="lg:text-[72px]  carbon min-[1280px]:text-[75px] xl:w-[617px] !leading-[1.2] max-[358px]:text-4xl  text-4xl md:text-5xl text-[#FFFFFF]  font-black"

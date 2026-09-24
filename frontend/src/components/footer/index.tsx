@@ -15,7 +15,7 @@ const LeftMenu = [
   { name: "Skytrek", href: "/skytrek" },
 
   { name: "Sky token", href: "/sky-token" },
-  { name: "Perks & Benefits", href: "/perks-&-benefits" },
+  { name: "Perks & Benefits", href: "/perks-and-benefits" },
 ];
 const RightMenu = [
   { name: "NFT’S", href: "/sky-nft" },

@@ -41,6 +41,7 @@ const TermOfUse = () => {
         <div className="container mx-auto max-[1279px]:px-4">
           <div className="lg:pt-[50px]">
             <TypoGraphy
+              as="h1"
               variant="heading"
               text="Term Of Use"
               customCss="lg:text-[72px] text-center carbon min-[1280px]:text-[80px]  !leading-[1.2] max-[358px]:text-4xl  text-5xl md:text-7xl text-[#FFFFFF]  font-black"

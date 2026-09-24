@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     "NFT Utility",
   ],
   alternates: {
-    canonical: "https://skydogsocial.com/perks-&-benefits",
+    canonical: "https://skydogsocial.com/perks-and-benefits",
   },
   openGraph: {
     title: "Perks & Holder Benefits | SkyDog NFT Ecosystem",
     description:
       "Explore exclusive benefits for SkyDog NFT holders, including staking yield, VIP community access, game passes, and ecosystem governance privileges.",
-    url: "https://skydogsocial.com/perks-&-benefits",
+    url: "https://skydogsocial.com/perks-and-benefits",
     siteName: "SkyDog",
     images: [
       {

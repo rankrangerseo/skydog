@@ -24,6 +24,7 @@ const StorySection = () => {
         <div className=" text-center flex items-center justify-center max-lg:min-h-screen  min-[1700px]:py-[150px] min-[1440px]:py-[100px]  py-[100px]  flex-col w-full">
           <div className="">
             <TypoGraphy
+              as="h1"
               variant="heading"
               text="The SkyDog Saga."
               customCss="lg:text-[90px] text-center carbon xl:text-[100px] xl:w-[706px] xl:mx-auto !leading-[1.2] max-[358px]:text-4xl  text-4xl md:text-6xl text-[#FFFFFF]  font-black"

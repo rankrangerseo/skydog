@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Quicksand } from "next/font/google";
 
 import "./globals.css";
 import Header from "@/components/header";
@@ -7,6 +8,13 @@ import Footer from "@/components/footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { OrganizationSchema } from "@/components/seo/JsonLd";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-quicksand",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://skydogsocial.com"),
@@ -27,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={quicksand.variable}>
         <OrganizationSchema />
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
@@ -59,12 +67,6 @@ export default function RootLayout({
             }}
           />
         </noscript>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        ></link>
         <Header />
         <div className="flex flex-col min-h-screen min-w-full">{children}</div>
         <ToastContainer

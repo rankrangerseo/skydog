@@ -14,8 +14,6 @@ dist/
 
 # Environment Variables
 .env*.local
-.env
-.env.*
 
 # Debug / logs
 npm-debug.log*
@@ -29,5 +27,17 @@ Thumbs.db
 *.pem
 
 # IDEs
-.vscode/
 .idea/
+
+# Local / Academic thesis scripts & documents
+academic-thesis-typesetter/
+*.py
+*.docx
+*.pdf
+*.png
+build_*/
+docx_*/
+*.qlpreview/
+test_build/
+
+config.bat

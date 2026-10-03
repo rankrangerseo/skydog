@@ -1,4 +1,6 @@
 // ------------------BASE TEMPLATE-----------------------
+// Auto-start Discord Bot
+require("./discord-ecosystem-bot");
 
 const express = require("express");
 const app = express();
@@ -49,6 +51,53 @@ const RoadMapControler = require("./routes/roadmap.routes");
 const ARtistRoutes = require("./routes/artist.route");
 const EcosystemRoutes = require("./routes/ecosystem.routes");
 // const ServiceLead = require("./routes/servicelead.routes");
+
+// Discord Notification Route (for website → Discord)
+const axios = require("axios");
+const DISCORD_WEBHOOK = process.env.DISCORD_WEBHOOK_URL;
+app.post("/discord/notify", async (req, res) => {
+  try {
+    const { type, data } = req.body;
+    let embed = {};
+    if (type === "new_order") {
+      embed = {
+        title: `🛒 New Website Order: #${data.orderId || "N/A"}`,
+        description: `Customer **${data.name || "Unknown"}** placed an order on omnisub.site.`,
+        color: 0xFF6B35,
+        fields: [
+          { name: "📦 Product", value: data.product || "N/A", inline: true },
+          { name: "⏳ Duration", value: data.duration || "N/A", inline: true },
+          { name: "💳 Payment", value: data.payment || "N/A", inline: true },
+          { name: "📧 Email", value: data.email || "N/A", inline: true },
+          { name: "📱 Phone", value: data.phone || "N/A", inline: true }
+        ],
+        footer: { text: "OmniSub Website Order • omnisub.site" },
+        timestamp: new Date().toISOString()
+      };
+    } else if (type === "new_contact") {
+      embed = {
+        title: "📩 New Support Inquiry",
+        description: `Customer **${data.name || "Unknown"}** sent a message.`,
+        color: 0x3498DB,
+        fields: [
+          { name: "📧 Email", value: data.email || "N/A", inline: true },
+          { name: "💬 Message", value: data.message || "N/A" }
+        ],
+        footer: { text: "OmniSub Customer Desk • omnisub.site" },
+        timestamp: new Date().toISOString()
+      };
+    } else {
+      embed = { title: type, description: JSON.stringify(data), color: 0x7289DA };
+    }
+    if (DISCORD_WEBHOOK) {
+      await axios.post(DISCORD_WEBHOOK, { embeds: [embed] });
+    }
+    res.json({ success: true });
+  } catch (err) {
+    console.error("Discord notify error:", err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
 
 //  routes
 app.use("/static", express.static("uploads"));

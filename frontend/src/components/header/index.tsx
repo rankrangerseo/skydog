@@ -247,7 +247,7 @@ const pathname = usePathname();
 
                 <div className="w-[40%] max-[1023px]:w-full">
                   <div className="flex items-center justify-center max-[1023px]:justify-between  gap-7 ">
-                    <Link href="https://discord.gg/skydog">
+                    <Link target="_blank" href="https://discord.gg/zbF6Aab76g">
                       <Image
                         alt="skydog"
                         priority

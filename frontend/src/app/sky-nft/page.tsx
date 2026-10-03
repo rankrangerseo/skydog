@@ -12,10 +12,16 @@ export const metadata: Metadata = {
 
   keywords: [
     "Sky NFT",
+    "SkyDog NFT Collection",
+    "Blue-Chip NFTs",
+    "NFT Utility",
+    "Web3 Gaming Pass",
+    "Digital Collectibles",
+    "NFT Staking Rewards",
   ],
 
   alternates: {
-    canonical: "/sky-nft",
+    canonical: "https://skydogsocial.com/sky-nft",
   },
 
   robots: {

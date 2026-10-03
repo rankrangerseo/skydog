@@ -12,10 +12,16 @@ export const metadata: Metadata = {
 
   keywords: [
     "SKY Token",
+    "SkyDog Gaming Token",
+    "Play-to-Earn Crypto",
+    "Web3 Utility Token",
+    "Crypto Staking Yield",
+    "P2E Rewards Token",
+    "SkyTrek Currency",
   ],
 
   alternates: {
-    canonical: "/sky-token",
+    canonical: "https://skydogsocial.com/sky-token",
   },
 
   robots: {

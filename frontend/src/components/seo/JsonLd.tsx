@@ -19,7 +19,7 @@ export function OrganizationSchema() {
         "description": "SkyDog is a Web3 IP building blue-chip NFTs, immersive storytelling, and play-to-earn gaming ecosystems.",
         "sameAs": [
           "https://twitter.com/SkyDogSocialNFT",
-          "https://discord.gg/skydog",
+          "https://discord.gg/zbF6Aab76g",
           "https://t.me/SkyDog_SOCIAL",
           "https://www.instagram.com/skydog_social/",
           "https://www.facebook.com/skydogsocial",

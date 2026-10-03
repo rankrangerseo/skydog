@@ -24,8 +24,62 @@ export const metadata: Metadata = {
   },
   description:
     "SkyDog is a Web3 IP building the future of blue-chip NFTs with immersive storytelling, play-to-earn gaming, and a thriving community-driven ecosystem.",
-  keywords:
-    "SkyDog NFT, blue-chip NFTs, Web3 gaming, NFT collection, play-to-earn, metaverse, blockchain gaming",
+  keywords: [
+    "SkyDog NFT",
+    "Blue-Chip NFTs",
+    "Web3 Gaming",
+    "NFT Collection",
+    "Play-to-Earn",
+    "P2E Gaming",
+    "Metaverse",
+    "Blockchain Gaming",
+    "SkyTrek",
+    "SKY Token",
+    "Digital Collectibles",
+  ],
+  authors: [{ name: "SkyDog Team", url: "https://skydogsocial.com" }],
+  creator: "SkyDog",
+  publisher: "SkyDog",
+  alternates: {
+    canonical: "https://skydogsocial.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "SkyDog NFT | Blue-Chip NFTs & Web3 Gaming Ecosystem",
+    description:
+      "SkyDog is a Web3 IP building the future of blue-chip NFTs with immersive storytelling, play-to-earn gaming, and a thriving community-driven ecosystem.",
+    url: "https://skydogsocial.com",
+    siteName: "SkyDog",
+    images: [
+      {
+        url: "https://skydogsocial.com/assets/meta/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "SkyDog NFT Ecosystem",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SkyDog NFT | Blue-Chip NFTs & Web3 Gaming Ecosystem",
+    description:
+      "SkyDog is a Web3 IP building the future of blue-chip NFTs with immersive storytelling, play-to-earn gaming, and a thriving community-driven ecosystem.",
+    images: ["https://skydogsocial.com/assets/meta/preview.png"],
+    creator: "@SkyDogSocialNFT",
+    site: "@SkyDogSocialNFT",
+  },
 };
 
 export default function RootLayout({

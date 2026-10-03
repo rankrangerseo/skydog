@@ -12,10 +12,15 @@ export const metadata: Metadata = {
 
   keywords: [
     "SkyDog Roadmap",
+    "Web3 Project Milestones",
+    "NFT Development Roadmap",
+    "SkyTrek Launch Phases",
+    "SKY Token Distribution Schedule",
+    "DAO Governance Timeline",
   ],
 
   alternates: {
-    canonical: "/roadmap",
+    canonical: "https://skydogsocial.com/roadmap",
   },
 
   robots: {

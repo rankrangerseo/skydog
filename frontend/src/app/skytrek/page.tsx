@@ -13,10 +13,15 @@ export const metadata: Metadata = {
 
   keywords: [
     "SkyTrek",
+    "Web3 Space Game",
+    "Play-to-Earn Space Adventure",
+    "P2E Blockchain Gaming",
+    "NFT Space Simulator",
+    "SkyDog Arcade",
   ],
 
   alternates: {
-    canonical: "/skytrek",
+    canonical: "https://skydogsocial.com/skytrek",
   },
 
   robots: {

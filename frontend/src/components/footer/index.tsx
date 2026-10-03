@@ -75,9 +75,9 @@ const Footer = () => {
                 />
 
                 <div className=" flex gap-3 items-center flex-wrap mt-2 min-[992px]:my-2 lg:mb-0">
-                  <Link target="_blank" href="https://discord.gg/skydog">
+                  <Link target="_blank" href="https://discord.gg/zbF6Aab76g">
                     <Image
-                      alt="SkyDog Discord Community"
+                      alt="OmniSub Discord Community"
                       priority
                       src={MyImage.discord}
                       className="w-[50px] h-[50px]"

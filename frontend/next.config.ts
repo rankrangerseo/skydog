@@ -17,6 +17,21 @@ const nextConfig: NextConfig = {
         destination: "/perks-and-benefits",
         permanent: true,
       },
+      {
+        source: "/wp-sitemap.xml",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
+      {
+        source: "/sitemap_index.xml",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
+      {
+        source: "/xml-sitemaps",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
     ];
   },
 };

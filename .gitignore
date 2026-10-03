@@ -15,8 +15,7 @@ dist/
 # Environment Variables
 .env*.local
 .env
-!backend/.env
-!frontend/.env
+.env.*
 
 # Debug / logs
 npm-debug.log*
